@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: transcript-hub
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run transcript_hub.py --server.port 10000 --server.address 0.0.0.0
+    plan: free
